@@ -1,0 +1,21 @@
+*******************
+*    MPlayerWeb   *
+*******************
+
+Description:
+    A simple and remarkably feature-less way of browsing media and launching
+    mplayer from a web interface.
+
+Dependencies:
+    Python (tested in 2.6)
+    Twisted Web
+    MPlayer
+
+Setup:
+    1. Modify MEDIA_PATH to point to your videos
+    2. Run 'twistd -noy mplayerweb.py', browse to http://localhost:9001 and
+       make sure everything is working.
+    3. To daemonize the app, run with 'twistd -oy mplaywerweb.py'
+
+Note: I think this will leave a bunch of mplayer processes lying around, in the
+      future I may clean this up and add an actual 'remote control' interface.
